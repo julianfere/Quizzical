@@ -1,13 +1,106 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;700&display=swap%27');
+
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Karla', sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background: url('../src/images/amarillo.svg') no-repeat right top,
+              url('../src/images/celeste.svg') no-repeat bottom left;
+  background-size: 30rem;
+}
+
+
+.fc-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.question__title {
+  color: #293264;
+  font-weight: 700;
+}
+
+hr {
+  margin-top: 1.2rem;
+  border: 0.79px solid #DBDEF0
+}
+
+.question {
+  width: 100%;
+}
+
+.question__container {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+}
+
+.main__container {
+  gap: 2rem;
+}
+
+.main__container__content{
+  color: #293264;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.main__container__button {
+  background: #4D5B9E;
+  font-weight: 500;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 1.5rem;
+  border: none;
+  width: 22rem;
+  height: 5rem;
+}
+
+.main__container__content > h1 {
+  font-size: 7rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.question__container {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 3rem;
+  max-width: 80%;
+}
+
+.option__container {
+  display: flex;
+  gap: 2rem;
+  margin-top: 1rem;
+}
+
+.option__container input[type="radio"] {
+  display: none;
+}
+
+.option__container label {
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 0.5rem;
+  border: 0.79px solid #4D5B9E;
+  padding: 0.2rem 1rem 0.2rem 1rem;
+  color: #293264;
+}
+
+.option__container input[type="radio"]:checked+label {
+  background-color: #D6DBF5;
+  border: solid 1px #D6DBF5;
 }
