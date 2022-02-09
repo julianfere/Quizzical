@@ -104,3 +104,11 @@ hr {
   background-color: #D6DBF5;
   border: solid 1px #D6DBF5;
 }
+
+.correct {
+  background: #94D7A2!important;
+}
+
+.incorrect {
+  background: #F8BCBC!important;
+}
